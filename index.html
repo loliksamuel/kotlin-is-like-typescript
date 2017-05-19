@@ -70,10 +70,10 @@ shoppingList[1] = "bottle of water";
     "Kaylee" to "Mechanic"
 )
 occupations["Jayne"] = "Public Relations"
-</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let occupations = [
+</code></pre></div><div class="card"><div class="lang">TypeScript</div><pre class="code"><code>let occupations = {
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
-];
+};
 occupations["Jayne"] = "Public Relations";
 </code></pre></div></div></div><div class="case"><div class="name">Empty Collections</div><div class="pair"><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>val emptyArray = arrayOf&lt;String>()
 val emptyMap = mapOf&lt;String, Float>()
@@ -87,7 +87,6 @@ greet("Bob", "Tuesday")
     return `Hello ${name}, today is ${day}.`
 }
 greet("Bob", "Tuesday");
-
 </code></pre></div></div></div><div class="case"><div class="name">Tuple Return</div><div class="pair"><div class="card"><div class="lang">Kotlin</div><pre class="code"><code>data class GasPrices(val a: Double, val b: Double,
      val c: Double)
 fun getGasPrices() = GasPrices(3.59, 3.69, 3.79)
@@ -241,9 +240,9 @@ for (item in library) {
 let songCount = 0;
 
 for (let item in library) {
-    if (item is Movie) {
+    if (item instanceof Movie) {
         ++movieCount;
-    } else if item is Song {
+    } else if (item instanceof Song) {
         ++songCount;
     }
 }
