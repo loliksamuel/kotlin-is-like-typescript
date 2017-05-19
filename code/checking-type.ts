@@ -2,9 +2,9 @@ let movieCount = 0;
 let songCount = 0;
 
 for (let item in library) {
-    if (item is Movie) {
+    if (item instanceof Movie) {
         ++movieCount;
-    } else if item is Song {
+    } else if (item instanceof Song) {
         ++songCount;
     }
 }

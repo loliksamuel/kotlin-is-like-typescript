@@ -1,5 +1,5 @@
-let occupations = [
+let occupations = {
     "Malcolm": "Captain",
     "Kaylee": "Mechanic",
-];
+};
 occupations["Jayne"] = "Public Relations";
