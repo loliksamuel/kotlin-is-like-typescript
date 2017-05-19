@@ -1,5 +1,5 @@
 
-# Kotlin is like Swift
+# Kotlin is like TypeScript
 
 Page: https://gi-no.github.io/kotlin-is-like-typescript/
 

@@ -6,3 +6,7 @@ function makeIncrementer():(number) => number{
 }
 let increment = makeIncrementer();
 increment(7);
+
+// makeIncrementer can also be written in a shorter way:
+let makeIncrementer = () => (number: number) => 1 + number;
+
